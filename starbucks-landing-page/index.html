@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="./build/tailwind.css" />
     <title>Starbucks Landing Page (unOfficial)</title>
   </head>
   <body>
@@ -25,7 +25,7 @@
           insert-x-0
           top-0
           w-full
-          px-10
+          px-20
           py-2
           flex
           justify-between
@@ -58,6 +58,65 @@
           </li>
         </ul>
       </header>
+
+      <div
+        class="relative w-full flex justify-between items-center px-20"
+        id="content"
+      >
+        <div class="relative max-w-xl" id="textBox">
+          <h2 class="text-gray-800 leading-relaxed font-semibold text-6xl">
+            It's not just Coffee <br />
+            It's
+            <span class="text-green-700 text-7xl font-extrabold"
+              >Starbucks</span
+            >
+          </h2>
+          <p class="text-gray-800">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            temporibus quisquam a numquam eum excepturi tempora accusamus
+            deserunt, repudiandae dolorum recusandae itaque blanditiis
+            laudantium illum cupiditate hic, praesentium, in eius?
+          </p>
+          <a
+            class="
+              inline-block
+              mt-4
+              py-2
+              px-6
+              text-white
+              bg-green-700
+              font-bold
+              rounded-full
+              shadow-md
+            "
+            href="#"
+            >Learn More</a
+          >
+        </div>
+        <div class="w-xl flex justify-end mr-10 mt-10" id="imgBox">
+          <img class="w-xl" src="./images/img1.png" alt="" />
+        </div>
+      </div>
+      <ul
+        class="absolute flex left-1/2 transform -translate-x-1/2 bottom-2"
+        id="thumb"
+      >
+        <li
+          class="inline-block mx-5 transform duration-500 hover:-translate-y-10"
+        >
+          <img class="w-14" src="./images/thumb1.png" alt="" />
+        </li>
+        <li
+          class="inline-block mx-5 transform duration-500 hover:-translate-y-10"
+        >
+          <img class="w-14" src="./images/thumb2.png" alt="" />
+        </li>
+        <li
+          class="inline-block mx-5 transform duration-500 hover:-translate-y-10"
+        >
+          <img class="w-14" src="./images/thumb3.png" alt="" />
+        </li>
+      </ul>
     </section>
   </body>
 </html>
