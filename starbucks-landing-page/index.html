@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./build/tailwind.css" />
+    <link rel="stylesheet" href="./src/tailwind.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Starbucks Landing Page (unOfficial)</title>
   </head>
   <body>
@@ -19,6 +20,7 @@
         bg-white
       "
     >
+      <div id="cercle" class="circle"></div>
       <header
         class="
           absolute
@@ -94,7 +96,12 @@
           >
         </div>
         <div class="w-xl flex justify-end mr-10 mt-10" id="imgBox">
-          <img class="w-xl" src="./images/img1.png" alt="" />
+          <img
+            id="starbucks"
+            class="max-w-sm h-sm"
+            src="./images/img1.png"
+            alt=""
+          />
         </div>
       </div>
       <ul
@@ -104,19 +111,65 @@
         <li
           class="inline-block mx-5 transform duration-500 hover:-translate-y-10"
         >
-          <img class="w-14" src="./images/thumb1.png" alt="" />
+          <img
+            class="w-14"
+            src="./images/thumb1.png"
+            alt=""
+            onclick="changeImg('./images/img1.png'), changeCircle('#017143')"
+          />
         </li>
         <li
           class="inline-block mx-5 transform duration-500 hover:-translate-y-10"
         >
-          <img class="w-14" src="./images/thumb2.png" alt="" />
+          <img
+            class="w-14"
+            src="./images/thumb2.png"
+            alt=""
+            onclick="changeImg('./images/img2.png'), changeCircle('#eb7495')"
+          />
         </li>
         <li
           class="inline-block mx-5 transform duration-500 hover:-translate-y-10"
         >
-          <img class="w-14" src="./images/thumb3.png" alt="" />
+          <img
+            class="w-14"
+            src="./images/thumb3.png"
+            alt=""
+            onclick="changeImg('./images/img3.png'), changeCircle('#d752b1')"
+          />
+        </li>
+      </ul>
+
+      <ul
+        class="
+          absolute
+          flex-col
+          top-1/2
+          transform
+          -translate-y-1/2
+          right-2
+          justify-center
+          items-center
+        "
+        id="social-icons"
+      >
+        <li class="grid center">
+          <a href="#" class="inline-block transform scale-50 filter invert"
+            ><img src="./images/facebook.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="inline-block transform scale-50 filter invert"
+            ><img src="./images/instagram.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="inline-block transform scale-50 filter invert"
+            ><img src="./images/twitter.png" alt=""
+          /></a>
         </li>
       </ul>
     </section>
+    <script src="./src/script.js"></script>
   </body>
 </html>
