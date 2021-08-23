@@ -10,5 +10,5 @@ https://youthful-northcutt-e3473c.netlify.app/
 ## tasty food website
 https://distracted-lovelace-c52e3a.netlify.app/
 
-## starbucks-landing-page
+## starbucks-landing-page (not responsive yet)
 https://nostalgic-torvalds-2aeff9.netlify.app/
